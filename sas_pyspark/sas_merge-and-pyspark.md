@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/New1-Merging-SQL-vs.-Data-Step.jpg
+cover: ../.gitbook/assets/merge.jpg
 coverY: 0
 ---
 

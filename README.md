@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/Global Economic Outlook 2022-640X32031.jpg
+cover: .gitbook/assets/data.jpg
 coverY: 0
 ---
 
