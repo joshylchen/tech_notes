@@ -15,7 +15,7 @@ In terms of _one-to-one_ or _one-to-none_ relationship, SAS merge operates the s
 For instance, \
 
 
-```
+```sas
 data TableC;
 merge TablA (in=a) TableB (in=b);
 by id;
