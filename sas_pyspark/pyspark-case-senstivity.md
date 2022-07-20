@@ -28,5 +28,5 @@ Select transformation function not only applies case insenstive filtering, but a
 Case sensitivity is set to false by default. We can enable it by turning it on in the spark-session .
 
 ```
-spark_session.sql('set spark.sql.caseSensitive=true')
+spark.conf.set('spark.sql.caseSensitive', True)
 ```
