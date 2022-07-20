@@ -1,6 +1,6 @@
 # Pyspark Case Senstivity
 
-Unlike Python, Pyspark does case insenstive column header resolution.
+Unlike Python, Pyspark does case insensitive column header resolution.
 
 Let's create a dataframe
 
