@@ -11,7 +11,7 @@ b = spark.createDataFrame(a)
 display(b)
 ```
 
-![sample dataframe](.gitbook/assets/sampledf.JPG)
+![sample dataframe](../.gitbook/assets/sampledf.JPG)
 
 We apply the filter to name and Id columns, but instead, we called Id: ID.
 
@@ -20,7 +20,7 @@ c=b.select("name","ID")
 display(c)
 ```
 
-![New dataframe after filter applied](.gitbook/assets/sampledf\_after\_filter.JPG)
+![New dataframe after filter applied](../.gitbook/assets/sampledf\_after\_filter.JPG)
 
 As you can see, the column has been renamed to ID in the new dataframe.\
 Select transformation function not only applies case insenstive filtering, but also renames the column header in the new dataframe after transformation.
