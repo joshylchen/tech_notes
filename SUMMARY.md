@@ -11,3 +11,7 @@
 ***
 
 * [Efficient replication of SAS counter function using Pyspark](efficient-replication-of-sas-counter-function-using-pyspark.md)
+
+## Machine Learning and Data Analytics
+
+* [The intuition behind the Linear Discrimination Model - DevOps edition](machine-learning-and-data-analytics/the-intuition-behind-the-linear-discrimination-model-devops-edition.md)
