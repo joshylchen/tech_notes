@@ -61,9 +61,44 @@ In microservice, the related code of the same module/class is connected together
 Now you may be curious, why does this have anything to do with Linear Discrimination Model?\
 Let's find the coupling and cohesive definition in LDA.
 
+#### Highly Cohesive
+
 <figure><img src="../.gitbook/assets/Cohesive.JPG" alt=""><figcaption><p>Cohesive in LDR</p></figcaption></figure>
 
 &#x20;As Cohesive refers to the tight relationships within the class, we want the red dots after projection to cluster together and the same as the blue dots.
 
+{% hint style="info" %}
+variance is **a measure of dispersion that takes into account the spread of all data points in a data set.**
+{% endhint %}
 
+Mathematically, the variance can illustrate our objectives. Basically, we want the variance of each class as small as possible which represent all the points converging to its center (mean).
 
+<figure><img src="../.gitbook/assets/variance.JPG" alt=""><figcaption><p>variance</p></figcaption></figure>
+
+$$
+{s_{1}+s_{{2}}}
+$$
+
+Highly Cohesive means we want the variance of both class 1 (red dots) and class 2 (blue dots) to be as large as possible
+
+#### Loosely Coupled
+
+<figure><img src="../.gitbook/assets/Loose Coupling.JPG" alt=""><figcaption><p>Loosely Coupled</p></figcaption></figure>
+
+The distance between two classes, after projects, represents the relationship between these two classes. We want this distance to be as large as possible, so we square the distance to ignore the negative value after the deduction.
+
+$$
+\left(\bar{z}_1-\bar{z}_2\right)^2
+$$
+
+#### Final Objective function
+
+<figure><img src="../.gitbook/assets/HC and LC.JPG" alt=""><figcaption></figcaption></figure>
+
+Combining these two objectives together, we can form our final objective function, which achieves both cohesion and coupling together.
+
+$$
+\frac{\left(\bar{z}_1-\bar{z}_2\right)^2}{s_{1}+s_{{2}}}
+$$
+
+By minimizing this objective function, we can achieve our main objective.&#x20;
